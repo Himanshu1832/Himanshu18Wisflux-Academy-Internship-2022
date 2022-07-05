@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  gap: 10px;
+}
+
+header {
+  border: 1px solid #ccc;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  font-weight: bolder;
+  background-color: rgb(214, 176, 222);
+}
+nav {
+  /* padding: 20px 10px; */
+}
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: rgb(43, 41, 2);
+  background-color: bisque;
+  
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  color: black;
+  background-color: aquamarine;
+  margin: 10px 0;
+}
+nav ul li:hover {
+  background: rgb(6, 4, 4);
+  transition: 0.3s ease-in-out;
+  font-size: 17px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+/* Main Section */
+
+main {
+  padding: 50px;
+  background-color: rgb(204, 213, 223);
+  color: rgb(27, 1, 1);
+  font-weight: bolder;
+}
+
+section {
+  margin-bottom: 50px;
+  padding: 5px;
+  scroll-margin: 50px;
+  color: rgb(2, 18, 42);
+
+}
+
+section article {
+  max-width: 1200px;
+  font-size: 14px;
+}
+section h2 {
+  font-size: 20px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+section article {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section article ul {
+  margin-left: 20px;
+}
+section article ul li {
+  margin-bottom: 10px;
+}
+
+section article p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+h2{
+color: blue;
+
+
+}
+h2:hover{
+  color: azure;
+  background-color: black;
+  font-size: large;
+  width: 100%;
+  padding: 7px;
+}
