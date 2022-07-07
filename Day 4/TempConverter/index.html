@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <style>
+        body{
+            padding: 50px 100px;
+        }
+        #whole{
+            
+            padding: 50px 100px;
+            text-align: center;
+            background-color: aqua;
+            
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .inputdiv{
+            display: inline-block;
+        }
+        .inp{
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        h3{
+            font-size: 40px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Converter</h1>
+    <div id="whole">
+
+        
+        
+            <div class="inputdiv">
+                <h3>Celsius</h3><br>
+                <input type="number" value="0" class="inp" id="ic">
+            </div>
+            <div class="inputdiv">
+                <h3>Farhenite</h3><br>
+                <input type="number" value="36" class="inp" id="ifa">
+            </div>
+        
+        
+    </div>
+</body>
+
+<script>
+
+    let ic = document.getElementById("ic");
+    let ifa = document.getElementById("ifa");
+
+    ic.addEventListener('input',function(){
+        
+        let c = this.value;
+        let f = c * 9/5 + 32;
+        if(!Number.isInteger(f))
+        {
+            f = f.toFixed(4);
+        }
+        ifa.value = f;
+    });
+
+    ifa.addEventListener('input',function(){
+         
+        let f = this.value;
+        let c = 5/9 * (f - 32);
+        if(!Number.isInteger(c))
+        {
+            c = c.toFixed(4);
+        }
+        ic.value = c;
+    });
+
+
+    
+</script>
+</html>

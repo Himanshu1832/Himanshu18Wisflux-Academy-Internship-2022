@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication and Division</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 100px 50px;
+            
+        }
+
+        h1{
+            color: rgb(12, 135, 169);
+            
+        }
+
+        div{
+            border: 3px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+    <h1>Number 1</h1>
+    <input type="number" value="0" id="num1" class="num">
+    </div>
+
+    <div>
+    <h1>Number 2</h1>
+    <input type="number" value="0" id="num2" class="num">
+    </div>
+    <div>
+    <h1>Multiplication</h1>
+    <h4 id="mul">0</h4>
+    </div>
+    <div>
+    <h1 >Division</h1>
+    <h4 id="div">0</h4>
+    </div>
+
+    <script>
+        let num1 = document.getElementById("num1");
+
+let num2 = document.getElementById("num2");
+
+console.log("hii");
+
+num1.addEventListener('input',function(){
+    let x= num1.value;
+    let y = num2.value;
+    document.getElementById("mul").innerHTML = x * y;
+    document.getElementById("div").innerHTML = x / y;
+
+});
+
+num2.addEventListener('input',function(){
+    let x= num1.value;
+    let y = num2.value;
+    document.getElementById("mul").innerHTML = x * y;
+    document.getElementById("div").innerHTML = x / y;
+
+});
+
+    </script>
+</body>
+</html>
