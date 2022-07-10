@@ -1,10 +1,47 @@
+
+// hamburger
+
+
+
+const ham = document.querySelector(".ham");
+const navMenu = document.querySelector(".nav-menu");
+const submit = document.querySelector("#submit");
+const sub = document.querySelector("#sub");
+
+ham.addEventListener("click",()=>{
+    ham.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+
+document.querySelectorAll("li").forEach(
+    n=>
+    n.addEventListener("click",()=>
+    {
+        ham.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+
+    submit.addEventListener("click",(e)=>{
+        sub.innerHTML="Subscribed";
+        e.preventDefault;
+    })
+
+
+
+
+
 const blg_title = document.querySelector('#blog-title')
+
 const blg_content = document.querySelector('#blog-content')
+
 const add_blg = document.querySelector('#add-blog')
+
 const bottom = document.querySelector('.bottom')
+
 const blog = document.querySelector('.blog')
 
-/* -------- Function Declarations -------- */
+
 
 const makeBlog = (title, content) => {
 	let blog = document.createElement('div')
@@ -39,14 +76,16 @@ const makeBlog = (title, content) => {
 }
 
 const blogEvent = (e) => {
+	
 	console.log(e['path'][1])
 	const current_blog_title = e['path'][1].childNodes[1].innerText
 	localStorage.removeItem(current_blog_title)
 	e['path'][1].remove()
+	
 }
 
 
-/* ------- Event Listeners ------- */
+
 
 add_blg.addEventListener('click', (e) => {
 	e.preventDefault()
@@ -61,12 +100,12 @@ add_blg.addEventListener('click', (e) => {
 		return true
 	}
 
-	alert("Title Or Content Is Missing. Please Make Sure That You Have Filled The Title and Content Field.")
+	alert("Title Or Content Is Missing. ")
 
 })
 
 
-/* ------- Local Storage Stuff ------- */
+
 
 window.onload = () => {
 	getAllBlogs()
@@ -76,36 +115,10 @@ const setLocalBlog = (title, content) => localStorage.setItem(title.toString(), 
 
 const getAllBlogs = () => {
 	Object.keys(localStorage).forEach((key, index) => {
+		
 		makeBlog(key, localStorage.getItem(key))
+		
 	})
 }
 
 
-
-// hamburger
-
-
-
-const ham = document.querySelector(".ham");
-const navMenu = document.querySelector(".nav-menu");
-const submit = document.querySelector("#submit");
-const sub = document.querySelector("#sub");
-
-ham.addEventListener("click",()=>{
-    ham.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-
-document.querySelectorAll("li").forEach(
-    n=>
-    n.addEventListener("click",()=>
-    {
-        ham.classList.remove("active");
-        navMenu.classList.remove("active");
-    }))
-
-    submit.addEventListener("click",(e)=>{
-        sub.innerHTML="Subscribed";
-        e.preventDefault;
-    })
