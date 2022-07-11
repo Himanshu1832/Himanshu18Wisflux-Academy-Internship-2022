@@ -1,14 +1,14 @@
-<!-- Assignment 1 Week 2 Day 1 -->
+// Assignment 1 Week 2 Day 1
 
 
-<!-- Theory: -->
+// Theory:
 
 
-<!-- What is Javascript? -->
+// What is Javascript?
 
 JavaScript is an object orient programming language designed to make web development easier and more attractive. In most cases, JavaScript is used to create responsive, interactive elements for web pages, enhancing the user experience.
 
-<!-- What is the difference between let and var? -->
+// What is the difference between let and var?
 
 The main difference between let and var is that scope of a variable defined with let is limited to the block in which it is declared while variable declared with var has the global scope. So we can say that var is rather a keyword which defines a variable globally regardless of block scope.
 
@@ -28,17 +28,17 @@ let b = 'hello';
 let b = 'world'; // SyntaxError: Identifier 'b' has already been declared
 
 
-<!-- Why do prefer const over var? -->
+// Why do prefer const over var?
 
 If we wish for a variable to be re-definable, one can prefer using var. The usage of const makes sure that the variable binding is immutable but the object itself can change whenever we like.
 
 
-<!-- What is the use of JavaScript in Web Browsers? -->
+// What is the use of JavaScript in Web Browsers?
 
 Using this, we can transform a website from having very basic functionality to be whatever we wish to be. In terms of human analogy, JavaScript is the brain of the website.
 
 
-<!-- What are Objects? -->
+// What are Objects?
 
 Objects are one of the available data types in JS. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor. To create a sample object:
 
@@ -49,7 +49,7 @@ const person = {
 };
 
 
-<!-- What is an Array and how is it different from an Object in JavaScript? -->
+// What is an Array and how is it different from an Object in JavaScript?
 
 An array is a special variable, that can hold more than one value. In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
 
@@ -62,7 +62,7 @@ const exampleArr = new Array("This", "is", "an", "example");
 Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
 
 
-<!-- What is a function? -->
+// What is a function?
 
 A function is a block of code that is designed to perform a specific task. The usage of a function also helps in re-use of code rather than writing it each time we wish to use it.
 
@@ -74,7 +74,7 @@ function nthFibonacci(inpNum) {
 }
 
 
-<!-- How can we implement call by value and call by reference in Javascript? -->
+// How can we implement call by value and call by reference in Javascript?
 
 To implement call by value, see the code snippet below:
 
@@ -86,7 +86,8 @@ function updateOriginalVal(originalVal) {
 
 updateOriginalVal(originalVal); // 20
 console.log(originalVal); // 10
-As you can see, the value of the originalVal variable did not change, rather it was a copy of the original variable, whose value gets changed.
+
+As we can see, the value of the originalVal variable did not change, rather it was a copy of the original variable, whose value gets changed.
 
 To implement call by reference, see the code snippet below:
 
@@ -103,28 +104,31 @@ updateVal(myObj);
 console.log(myObj.val); // 20
 
 
-<!-- What are primitive data types in JS? -->
+
+// What are primitive data types in JS?
+
 A primitive data type is a data type that is not an object and has no methods or properties. There are 7 primitive data types in JS: string, number, bigint, boolean, undefined, symbol and null.
 
 
-<!-- What is DOM ? -->
+
+// What is DOM ?
 
 DOM stands for Document Object Model, with the help of DOM JS can access and change all the elements of a HTML document. It is constructed as a tree of Objects.
 
 With the object model, JS gets all the power it needs to create dynamic web pages.
 
 
-<!-- Why do we need DOM? -->
+// Why do we need DOM?
 
 DOM allows JS to be powerful enought to access and change everything that can be changed in a HTML document i.e. we can change the Styling, create new elements, etc. Being able to use DOM gives the programmer infinite possibilities and thus allows a programmer to be able to create truly dynamic web pages.
 
 
 
-<!---------------------- Programs: --------------------->
+//-------------------- Programs: -------------------
 
 
 
-<!-- Average of array nums in JS. -->
+// Average of array nums in JS.
 
 const arr = [1, 2, 3, 4, 5];
 
@@ -134,7 +138,7 @@ console.log(average);
 
 
 
-<!-- Swap variables using reference. -->
+// Swap variables using reference.
 
 function swapUsingReference(objRef) 
 {
@@ -161,7 +165,7 @@ console.log(a + " ," + b);
 
 
 
-<!-- Print the fibonacci sequence. -->
+// Print the fibonacci sequence.
 
 function printFibonacciSequence() {
   let inputNum = parseInt(prompt("Enter a number: "));
@@ -180,7 +184,7 @@ console.log("Fibonacci sequence: ");
 printFibonacciSequence();
 
 
-<!-- Sort an array in both ascending order and descending order. -->
+// Sort an array in both ascending order and descending order.
 
 Sort numbers in ascending order:
 
