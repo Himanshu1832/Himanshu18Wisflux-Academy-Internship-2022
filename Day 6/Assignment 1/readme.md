@@ -1,10 +1,13 @@
+// Assignment 1 Week 2 Day 1
+``` diff
 + Theory:
 
-- What is Javascript?
+! What is Javascript?
 
 JavaScript is an object orient programming language designed to make web development easier and more attractive. In most cases, JavaScript is used to create responsive, interactive elements for web pages, enhancing the user experience.
 
-! What is the difference between let and var?
+
+- What is the difference between let and var?
 
 The main difference between let and var is that scope of a variable defined with let is limited to the block in which it is declared while variable declared with var has the global scope. So we can say that var is rather a keyword which defines a variable globally regardless of block scope.
 
@@ -16,11 +19,13 @@ Also, one difference between var and let is variable with var can be redeclared 
 
 let a = 'hello'; // globally scoped var b = 'world'; // globally scoped console.log(window.a); // undefined console.log(window.b); // 'world' var a = 'hello'; var a = 'world'; // No problem, 'hello' is replaced. let b = 'hello'; let b = 'world'; // SyntaxError: Identifier 'b' has already been declared
 
-- Why do prefer const over var?
+
++ Why do prefer const over var?
 
 If we wish for a variable to be re-definable, one can prefer using var. The usage of const makes sure that the variable binding is immutable but the object itself can change whenever we like.
 
-+ What is the use of JavaScript in Web Browsers?
+
+- What is the use of JavaScript in Web Browsers?
 
 Using this, we can transform a website from having very basic functionality to be whatever we wish to be. In terms of human analogy, JavaScript is the brain of the website.
 
@@ -37,6 +42,7 @@ An array is a special variable, that can hold more than one value. In Programmin
 Arrays in JS are resizable and can contain a mix of different data types. JS arrays are not associative arrays. Arrays in JS are zero-indexed. To create a sample array in JS.
 
 const exampleArr = new Array("This", "is", "an", "example"); Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
+
 
 + What is a function?
 
@@ -64,9 +70,11 @@ function updateVal(objRef) { objRef.val += 10; }
 
 console.log(myObj.val); // 10 updateVal(myObj); console.log(myObj.val); // 20
 
+
 + What are primitive data types in JS?
 
 A primitive data type is a data type that is not an object and has no methods or properties. There are 7 primitive data types in JS: string, number, bigint, boolean, undefined, symbol and null.
+
 
 ! What is DOM ?
 
@@ -74,11 +82,14 @@ DOM stands for Document Object Model, with the help of DOM JS can access and cha
 
 With the object model, JS gets all the power it needs to create dynamic web pages.
 
+
 - Why do we need DOM?
 
 DOM allows JS to be powerful enought to access and change everything that can be changed in a HTML document i.e. we can change the Styling, create new elements, etc. Being able to use DOM gives the programmer infinite possibilities and thus allows a programmer to be able to create truly dynamic web pages.
 
+
 //-------------------- Programs: -------------------
+
 
 + Average of array nums in JS.
 
@@ -98,11 +109,24 @@ const sampObj = { var1: 5, var2: 2, }; console.log(sampObj); swapUsingReference(
 
 let a = 5; let b = 2; console.log(a + " ," + b); [a, b] = [b, a]; console.log(a + " ," + b);
 
+
 + Print the fibonacci sequence.
 
-function printFibonacciSequence() { let inputNum = parseInt(prompt("Enter a number: ")); let a = 0, b = 1; let nextVal; for (let i = 1; i <= inputNum; i++) { console.log(a); nextVal = a + b; a = b; b = nextVal; } }
+function printFibonacciSequence() 
+{ 
+   let inputNum = parseInt(prompt("Enter a number: "));
+   let a = 0, b = 1; let nextVal;  
+   for (let i = 1; i <= inputNum; i++) 
+   {    
+       console.log(a); 
+       nextVal = a + b;
+       a = b; b = nextVal; 
+   } 
+}
 
-console.log("Fibonacci sequence: "); printFibonacciSequence();
+console.log("Fibonacci sequence: "); 
+printFibonacciSequence();
+
 
 ! Sort an array in both ascending order and descending order.
 
