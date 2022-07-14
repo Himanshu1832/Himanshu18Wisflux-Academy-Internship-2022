@@ -14,22 +14,62 @@
       }
       img {
         padding: 0px;
-        height: 17%;
-        width: 17%;
+        height: 2%;
+        width: 1%;
         margin: 30px;
       }
     </style>
   </head>
   <!-- Himanshu  Patni  -->
   <body>
-    <img src="c.jpg" id="img1" alt="" />
-    <img src="c++.jpeg" id="img2" alt="" srcset="" />
-    <img src="se.jpg" id="img3" alt="" srcset="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" class="i1" id="img1" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img2" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img3" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img4" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img5" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img6" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img7" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img8" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img9" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img10" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img11" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img12" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img13" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img14" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img15" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img16" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img17" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img18" alt="" />
+    <!-- <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img19" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img20" alt="" />
+
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img21" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img22" alt="" />
+    <img src="http://clipground.com/images/rain-clipart-no-background-10.png" id="img23" alt="" /> -->
+    <!-- <img src="c++.jpeg" id="img2" alt="" srcset="" />
+    <img src="se.jpg" id="img3" alt="" srcset="" /> -->
   </body>
   <script>
+    // var i1=document.getElementsByTagName("img");
     var img1 = document.getElementById("img1");
     var img2 = document.getElementById("img2");
     var img3 = document.getElementById("img3");
+    var img4 = document.getElementById("img4");
+    var img5 = document.getElementById("img5");
+    var img6 = document.getElementById("img6");
+    var img7 = document.getElementById("img7");
+    var img8 = document.getElementById("img8");
+    var img9 = document.getElementById("img9");
+    var img10 = document.getElementById("img10");
+    var img11 = document.getElementById("img11");
+    var img12 = document.getElementById("img12");
+    var img13 = document.getElementById("img13");
+    var img14 = document.getElementById("img14");
+    var img15 = document.getElementById("img15");
+    var img16 = document.getElementById("img16");
+    var img17 = document.getElementById("img17");
+    var img18 = document.getElementById("img18");
+    
 
     // Function to move image downward
 
@@ -40,15 +80,15 @@
         console.log("hii");
 
         var poe = 0;
-        anim = setInterval(animate, 5);
+        anim = setInterval(animate, 0.0001);
         function animate() {
-          if (poe == 400) {
+          if (poe == 60) {
             x.style.paddingTop = 0;
             clearInterval(anim);
             resolve();
           } else {
             poe++;
-            x.style.paddingTop = poe + "px";
+            x.style.paddingTop = poe + "3px";
             // x.style.paddingLeft = poe +"px";
             // console.log("hii");
           }
@@ -68,6 +108,21 @@
         await move(img1);
         await move(img2);
         await move(img3);
+        await move(img4);
+        await move(img5);
+        await move(img6);
+        await move(img7);
+        await move(img8);
+        await move(img9);
+        await move(img10);
+        await move(img11);
+        await move(img12);
+        await move(img13);
+        await move(img14);
+        await move(img15);
+        await move(img16);
+        await move(img17);
+        await move(img18);
        }
       
     }
